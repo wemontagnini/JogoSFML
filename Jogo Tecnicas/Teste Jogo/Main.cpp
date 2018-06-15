@@ -1,8 +1,8 @@
-#include "Principal.h"
+#include "Jogo.h"
 
 int main()
 {
-	Principal J;
+	Jogo J;
 	
 	return 0;
 } 

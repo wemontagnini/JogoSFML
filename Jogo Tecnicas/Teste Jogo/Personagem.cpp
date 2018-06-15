@@ -25,17 +25,23 @@ Personagem::~Personagem()
 {
 }
 
-void Personagem::Update(float deltaTime, int i)
+
+void Personagem::Update(float deltaTime, int i, float posMax, const float posMin)
 {
 	int colunas = 0;
 	vel.x = 0.0f;
 	if (i == 1)
 	{
-		if (Keyboard::isKeyPressed(Keyboard::A))
-			vel.x -= velocidade;
-		if (Keyboard::isKeyPressed(Keyboard::D))
-			vel.x += velocidade;
-
+		if (get_posicao().x - vel.x * deltaTime > posMin)
+		{
+			if (Keyboard::isKeyPressed(Keyboard::A))
+				vel.x -= velocidade;
+		}
+		if (get_posicao().x + vel.x * deltaTime < posMax)
+		{
+			if (Keyboard::isKeyPressed(Keyboard::D))
+				vel.x += velocidade;
+		}
 		if (Keyboard::isKeyPressed(Keyboard::W) && noChao)
 		{
 			noChao = false;
@@ -44,10 +50,16 @@ void Personagem::Update(float deltaTime, int i)
 	}
 	else if (i == 2)
 	{
-		if (Keyboard::isKeyPressed(Keyboard::Left))
-			vel.x -= velocidade;
-		if (Keyboard::isKeyPressed(Keyboard::Right))
-			vel.x += velocidade;
+		if (get_posicao().x - vel.x * deltaTime > posMin)
+		{
+			if (Keyboard::isKeyPressed(Keyboard::Left))
+				vel.x -= velocidade;
+		}
+		if (get_posicao().x + vel.x * deltaTime < posMax)
+		{
+			if (Keyboard::isKeyPressed(Keyboard::Right))
+				vel.x += velocidade;
+		}
 
 		if (Keyboard::isKeyPressed(Keyboard::Up) && noChao)
 		{

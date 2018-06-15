@@ -1,25 +1,75 @@
 ﻿  Animacao.cpp
-c:\users\nayla\desktop\jogo tecnicas\teste jogo\animacao.cpp(17): warning C4244: '=': conversão de 'float' para 'int', possível perda de dados
-c:\users\nayla\desktop\jogo tecnicas\teste jogo\animacao.cpp(18): warning C4244: '=': conversão de 'float' para 'int', possível perda de dados
+c:\users\nayla\desktop\jogo\teste jogo\animacao.h(22): warning C4244: '=': conversão de 'float' para 'int', possível perda de dados
+c:\users\nayla\desktop\jogo\teste jogo\animacao.h(23): warning C4244: '=': conversão de 'float' para 'int', possível perda de dados
+c:\users\nayla\desktop\jogo\teste jogo\animacao.cpp(19): warning C4244: '=': conversão de 'float' para 'int', possível perda de dados
+c:\users\nayla\desktop\jogo\teste jogo\animacao.cpp(20): warning C4244: '=': conversão de 'float' para 'int', possível perda de dados
+  Cenario.cpp
+  Chefao.cpp
+c:\users\nayla\desktop\jogo\teste jogo\animacao.h(22): warning C4244: '=': conversão de 'float' para 'int', possível perda de dados
+c:\users\nayla\desktop\jogo\teste jogo\animacao.h(23): warning C4244: '=': conversão de 'float' para 'int', possível perda de dados
   Colisor.cpp
-  Elemento.cpp
   Espinhos.cpp
   Fase.cpp
+c:\users\nayla\desktop\jogo\teste jogo\animacao.h(22): warning C4244: '=': conversão de 'float' para 'int', possível perda de dados
+c:\users\nayla\desktop\jogo\teste jogo\animacao.h(23): warning C4244: '=': conversão de 'float' para 'int', possível perda de dados
+c:\users\nayla\desktop\jogo\teste jogo\fase.cpp(21): warning C4244: 'argumento': conversão de 'time_t' para 'unsigned int', possível perda de dados
+c:\users\nayla\desktop\jogo\teste jogo\fase.cpp(225): warning C4244: 'argumento': conversão de 'time_t' para 'unsigned int', possível perda de dados
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\xmemory0(918): error C2259: 'Obstaculos': não é possível instanciar classe abstract
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\xmemory0(918): note: devido aos seguintes membros:
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\xmemory0(918): note: 'void Obstaculos::Update(const float)': é abstrato
+  c:\users\nayla\desktop\jogo\teste jogo\obstaculos.h(26): note: consulte a declaração de 'Obstaculos::Update'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\vector(949): note: consulte a referência à instanciação da função modelo 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,_Ty>(_Alloc &,_Objty *const ,_Ty &&)' que está sendo compilada
+          with
+          [
+              _Alloc=std::allocator<Obstaculos>,
+              _Ty=Obstaculos,
+              _Objty=Obstaculos
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\vector(951): note: consulte a referência à instanciação da função modelo 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,_Ty>(_Alloc &,_Objty *const ,_Ty &&)' que está sendo compilada
+          with
+          [
+              _Alloc=std::allocator<Obstaculos>,
+              _Ty=Obstaculos,
+              _Objty=Obstaculos
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\vector(965): note: consulte a referência à instanciação da função modelo 'void std::vector<Obstaculos,std::allocator<_Ty>>::_Emplace_back_with_unused_capacity<_Ty>(_Ty &&)' que está sendo compilada
+          with
+          [
+              _Ty=Obstaculos
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\vector(986): note: consulte a referência à instanciação da função modelo 'void std::vector<Obstaculos,std::allocator<_Ty>>::emplace_back<Obstaculos>(Obstaculos &&)' que está sendo compilada
+          with
+          [
+              _Ty=Obstaculos
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\vector(985): note: ao compilar a função membro '<Desconhecido>' de classe <Desconhecido>
+  c:\users\nayla\desktop\jogo\teste jogo\fase.cpp(486): note: consulte a referência à instanciação da função modelo 'void std::vector<Obstaculos,std::allocator<_Ty>>::push_back(_Ty &&)' que está sendo compilada
+          with
+          [
+              _Ty=Obstaculos
+          ]
+  c:\users\nayla\desktop\jogo\teste jogo\fase.h(20): note: consulte a referência à instanciação '<Desconhecido>' de classe <Desconhecido> que está sendo compilada
   Fogo.cpp
+c:\users\nayla\desktop\jogo\teste jogo\animacao.h(22): warning C4244: '=': conversão de 'float' para 'int', possível perda de dados
+c:\users\nayla\desktop\jogo\teste jogo\animacao.h(23): warning C4244: '=': conversão de 'float' para 'int', possível perda de dados
   Inimigo.cpp
+c:\users\nayla\desktop\jogo\teste jogo\animacao.h(22): warning C4244: '=': conversão de 'float' para 'int', possível perda de dados
+c:\users\nayla\desktop\jogo\teste jogo\animacao.h(23): warning C4244: '=': conversão de 'float' para 'int', possível perda de dados
   Jogador.cpp
+c:\users\nayla\desktop\jogo\teste jogo\animacao.h(22): warning C4244: '=': conversão de 'float' para 'int', possível perda de dados
+c:\users\nayla\desktop\jogo\teste jogo\animacao.h(23): warning C4244: '=': conversão de 'float' para 'int', possível perda de dados
   Jogo.cpp
-c:\users\nayla\desktop\jogo tecnicas\teste jogo\jogo.cpp(14): warning C4244: 'argumento': conversão de 'time_t' para 'unsigned int', possível perda de dados
-  Lista.cpp
+c:\users\nayla\desktop\jogo\teste jogo\animacao.h(22): warning C4244: '=': conversão de 'float' para 'int', possível perda de dados
+c:\users\nayla\desktop\jogo\teste jogo\animacao.h(23): warning C4244: '=': conversão de 'float' para 'int', possível perda de dados
   Main.cpp
+c:\users\nayla\desktop\jogo\teste jogo\animacao.h(22): warning C4244: '=': conversão de 'float' para 'int', possível perda de dados
+c:\users\nayla\desktop\jogo\teste jogo\animacao.h(23): warning C4244: '=': conversão de 'float' para 'int', possível perda de dados
   Menu.cpp
   Obstaculos.cpp
-  Pedra.cpp
   Personagem.cpp
+c:\users\nayla\desktop\jogo\teste jogo\animacao.h(22): warning C4244: '=': conversão de 'float' para 'int', possível perda de dados
+c:\users\nayla\desktop\jogo\teste jogo\animacao.h(23): warning C4244: '=': conversão de 'float' para 'int', possível perda de dados
   Plataforma.cpp
-  Principal.cpp
-c:\users\nayla\desktop\jogo tecnicas\teste jogo\principal.cpp(53): warning C4244: 'argumento': conversão de 'time_t' para 'unsigned int', possível perda de dados
   Tronco.cpp
   Gerando Código...
-c:\users\nayla\desktop\jogo tecnicas\teste jogo\inimigo.cpp(48): warning C4715: 'Inimigo::mover': nem todos os caminhos de controle retornam um valor
-  Teste Jogo.vcxproj -> C:\Users\Nayla\Desktop\Jogo Tecnicas\x64\Debug\Teste Jogo.exe
+c:\users\nayla\desktop\jogo\teste jogo\inimigo.cpp(47): warning C4715: 'Inimigo::mover': nem todos os caminhos de controle retornam um valor

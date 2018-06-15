@@ -6,12 +6,11 @@ Inimigo::Inimigo() :Personagem()
 	posMin = 0.0f;
 }
 
-Inimigo::Inimigo(Texture * textura, Vector2u qtdImagem, float troca, float vel_aux, float altPulo_aux, Vector2f tamPersonagem, Vector2f posicao, float distancia, int qtdDano_aux)
+Inimigo::Inimigo(Texture * textura, Vector2u qtdImagem, float troca, float vel_aux, float altPulo_aux, Vector2f tamPersonagem, Vector2f posicao, float distancia)
 	:Personagem(textura, qtdImagem, troca, vel_aux, altPulo_aux, tamPersonagem, posicao)
 {
 	posMax = posicao.x + distancia;
 	posMin = posicao.x - distancia;
-	qtdDano = qtdDano_aux;
 }
 
 Inimigo::~Inimigo()

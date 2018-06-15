@@ -8,8 +8,11 @@ class Fogo :
 private:
 	Animacao animacao;
 public:
-	Fogo();
-	Fogo(Texture * textura, Vector2f tamanho, Vector2f posicao, bool dano_aux, int qtdDano_aux, Vector2u qtdImagem_aux, float troca_aux);
+	Fogo(Vector2f posicao);
+	Fogo(Texture * textura, Vector2f tamanho, Vector2f posicao, bool visivel_aux, const bool dano_aux, Vector2u qtdImagem_aux, const float troca_aux);
 	virtual ~Fogo();
+	virtual void Update(const float deltaTime);
+	Animacao get_animacao() { return animacao; }
+
 };
 

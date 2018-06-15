@@ -20,7 +20,7 @@ public:
 	Personagem();
 	Personagem(Texture * texura, Vector2u qtdImagem, float troca, float vel_aux, float altPulo_aux,  Vector2f tamPersonagem, Vector2f posicao);
 	virtual ~Personagem();
-	void Update(float deltaTime, int i); //vel, noChao, linha, viradoDireita não podem ser const, são alterados na funcao
+	void Update(float deltaTime, int i, float posMax, const float posMin); //vel, noChao, linha, viradoDireita não podem ser const, são alterados na funcao
 	void emColisao(Vector2f direcao); //direcao, vel e noChao nao podem ser const, são alterados na função
 	void desenhar(RenderWindow & window) { window.draw(corpo); }
 	void mover(Vector2f auxiliar) { corpo.move(auxiliar); }
@@ -32,6 +32,7 @@ public:
 	Colisor get_colisor() { return Colisor(corpo); }
 	//Set Necessário
 	void set_noChao(const bool noChao_aux) { noChao = noChao_aux; }
+	void set_textura(const Texture * tex_aux) { corpo.setTexture(tex_aux); }
 	//void set_textura(const Textura * tex_aux) { corpo.setTexture(tex_aux); }
 };
 

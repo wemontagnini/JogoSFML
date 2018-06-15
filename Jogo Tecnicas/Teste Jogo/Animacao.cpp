@@ -6,6 +6,8 @@ Animacao::Animacao()
 	qtdImagem = Vector2u(0, 0);
 	tempoTotal = 0.0f;
 	imagemAtual.x = 0;
+	uvRect.height = 0;
+	uvRect.width = 0;
 }
 
 Animacao::Animacao(Texture * textura, Vector2u qtdImagem_aux, float troca_aux)

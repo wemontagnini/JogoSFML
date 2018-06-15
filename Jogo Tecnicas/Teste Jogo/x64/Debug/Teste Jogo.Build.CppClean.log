@@ -1,20 +1,88 @@
-c:\users\nayla\desktop\teste jogo\teste jogo\x64\debug\vc141.pdb
-c:\users\nayla\desktop\teste jogo\teste jogo\x64\debug\vc141.idb
-c:\users\nayla\desktop\teste jogo\teste jogo\x64\debug\main.obj
-c:\users\nayla\desktop\teste jogo\teste jogo\x64\debug\animation.obj
-c:\users\nayla\desktop\teste jogo\teste jogo\x64\debug\player.obj
-c:\users\nayla\desktop\teste jogo\teste jogo\x64\debug\platform.obj
-c:\users\nayla\desktop\teste jogo\teste jogo\x64\debug\collider.obj
-c:\users\nayla\desktop\teste jogo\teste jogo\x64\debug\inimigo.obj
-c:\users\nayla\desktop\teste jogo\teste jogo\x64\debug\spikes.obj
-c:\users\nayla\desktop\teste jogo\x64\debug\teste jogo.exe
-c:\users\nayla\desktop\teste jogo\x64\debug\teste jogo.ilk
-c:\users\nayla\desktop\teste jogo\x64\debug\teste jogo.pdb
-c:\users\nayla\desktop\teste jogo\teste jogo\x64\debug\colision.obj
-c:\users\nayla\desktop\teste jogo\teste jogo\x64\debug\inimigo.obj.enc
-c:\users\nayla\desktop\teste jogo\teste jogo\x64\debug\teste jogo.tlog\cl.command.1.tlog
-c:\users\nayla\desktop\teste jogo\teste jogo\x64\debug\teste jogo.tlog\cl.read.1.tlog
-c:\users\nayla\desktop\teste jogo\teste jogo\x64\debug\teste jogo.tlog\cl.write.1.tlog
-c:\users\nayla\desktop\teste jogo\teste jogo\x64\debug\teste jogo.tlog\link.command.1.tlog
-c:\users\nayla\desktop\teste jogo\teste jogo\x64\debug\teste jogo.tlog\link.read.1.tlog
-c:\users\nayla\desktop\teste jogo\teste jogo\x64\debug\teste jogo.tlog\link.write.1.tlog
+c:\users\nayla\desktop\jogo\teste jogo\x64\debug\vc141.pdb
+c:\users\nayla\desktop\jogo\teste jogo\x64\debug\vc141.idb
+c:\users\nayla\desktop\jogo\teste jogo\x64\debug\spikes.obj
+c:\users\nayla\desktop\jogo\teste jogo\x64\debug\platform.obj
+c:\users\nayla\desktop\jogo\teste jogo\x64\debug\collider.obj
+c:\users\nayla\desktop\jogo\teste jogo\x64\debug\animacao.obj
+c:\users\nayla\desktop\jogo\teste jogo\x64\debug\player.obj
+c:\users\nayla\desktop\jogo\teste jogo\x64\debug\inimigo.obj
+c:\users\nayla\desktop\jogo\teste jogo\x64\debug\colisor.obj
+c:\users\nayla\desktop\jogo\teste jogo\x64\debug\personagem.obj
+c:\users\nayla\desktop\jogo\teste jogo\x64\debug\jogador.obj
+c:\users\nayla\desktop\jogo\teste jogo\x64\debug\main.obj
+c:\users\nayla\desktop\jogo\teste jogo\x64\debug\plataforma.obj
+c:\users\nayla\desktop\jogo\teste jogo\x64\debug\fogo.obj
+c:\users\nayla\desktop\jogo\teste jogo\x64\debug\tronco.obj
+c:\users\nayla\desktop\jogo\teste jogo\x64\debug\pedra.obj
+c:\users\nayla\desktop\jogo\teste jogo\x64\debug\espinhos.obj
+c:\users\nayla\desktop\jogo\teste jogo\x64\debug\obstaculos.obj
+c:\users\nayla\desktop\jogo\teste jogo\x64\debug\fase.obj
+c:\users\nayla\desktop\jogo\teste jogo\x64\debug\jogo.obj
+c:\users\nayla\desktop\jogo\teste jogo\x64\debug\menu.obj
+c:\users\nayla\desktop\jogo\teste jogo\x64\debug\principal.obj
+c:\users\nayla\desktop\jogo\teste jogo\x64\debug\no.obj
+c:\users\nayla\desktop\jogo\teste jogo\x64\debug\lista.obj
+c:\users\nayla\desktop\jogo\teste jogo\x64\debug\elemento.obj
+c:\users\nayla\desktop\jogo tecnicas\teste jogo\x64\debug\vc141.pdb
+c:\users\nayla\desktop\jogo tecnicas\teste jogo\x64\debug\vc141.idb
+c:\users\nayla\desktop\jogo tecnicas\teste jogo\x64\debug\tronco.obj
+c:\users\nayla\desktop\jogo tecnicas\teste jogo\x64\debug\principal.obj
+c:\users\nayla\desktop\jogo tecnicas\teste jogo\x64\debug\plataforma.obj
+c:\users\nayla\desktop\jogo tecnicas\teste jogo\x64\debug\personagem.obj
+c:\users\nayla\desktop\jogo tecnicas\teste jogo\x64\debug\pedra.obj
+c:\users\nayla\desktop\jogo tecnicas\teste jogo\x64\debug\obstaculos.obj
+c:\users\nayla\desktop\jogo tecnicas\teste jogo\x64\debug\menu.obj
+c:\users\nayla\desktop\jogo tecnicas\teste jogo\x64\debug\main.obj
+c:\users\nayla\desktop\jogo tecnicas\teste jogo\x64\debug\lista.obj
+c:\users\nayla\desktop\jogo tecnicas\teste jogo\x64\debug\jogo.obj
+c:\users\nayla\desktop\jogo tecnicas\teste jogo\x64\debug\jogador.obj
+c:\users\nayla\desktop\jogo tecnicas\teste jogo\x64\debug\inimigo.obj
+c:\users\nayla\desktop\jogo tecnicas\teste jogo\x64\debug\fogo.obj
+c:\users\nayla\desktop\jogo tecnicas\teste jogo\x64\debug\fase.obj
+c:\users\nayla\desktop\jogo tecnicas\teste jogo\x64\debug\espinhos.obj
+c:\users\nayla\desktop\jogo tecnicas\teste jogo\x64\debug\elemento.obj
+c:\users\nayla\desktop\jogo tecnicas\teste jogo\x64\debug\colisor.obj
+c:\users\nayla\desktop\jogo tecnicas\teste jogo\x64\debug\animacao.obj
+c:\users\nayla\desktop\jogosfml-master\jogo tecnicas\teste jogo\x64\debug\vc141.pdb
+c:\users\nayla\desktop\jogosfml-master\jogo tecnicas\teste jogo\x64\debug\vc141.idb
+c:\users\nayla\desktop\jogosfml-master\jogo tecnicas\teste jogo\x64\debug\tronco.obj
+c:\users\nayla\desktop\jogosfml-master\jogo tecnicas\teste jogo\x64\debug\principal.obj
+c:\users\nayla\desktop\jogosfml-master\jogo tecnicas\teste jogo\x64\debug\plataforma.obj
+c:\users\nayla\desktop\jogosfml-master\jogo tecnicas\teste jogo\x64\debug\personagem.obj
+c:\users\nayla\desktop\jogosfml-master\jogo tecnicas\teste jogo\x64\debug\pedra.obj
+c:\users\nayla\desktop\jogosfml-master\jogo tecnicas\teste jogo\x64\debug\obstaculos.obj
+c:\users\nayla\desktop\jogosfml-master\jogo tecnicas\teste jogo\x64\debug\menu.obj
+c:\users\nayla\desktop\jogosfml-master\jogo tecnicas\teste jogo\x64\debug\main.obj
+c:\users\nayla\desktop\jogosfml-master\jogo tecnicas\teste jogo\x64\debug\lista.obj
+c:\users\nayla\desktop\jogosfml-master\jogo tecnicas\teste jogo\x64\debug\jogo.obj
+c:\users\nayla\desktop\jogosfml-master\jogo tecnicas\teste jogo\x64\debug\jogador.obj
+c:\users\nayla\desktop\jogosfml-master\jogo tecnicas\teste jogo\x64\debug\inimigo.obj
+c:\users\nayla\desktop\jogosfml-master\jogo tecnicas\teste jogo\x64\debug\fogo.obj
+c:\users\nayla\desktop\jogosfml-master\jogo tecnicas\teste jogo\x64\debug\fase.obj
+c:\users\nayla\desktop\jogosfml-master\jogo tecnicas\teste jogo\x64\debug\espinhos.obj
+c:\users\nayla\desktop\jogosfml-master\jogo tecnicas\teste jogo\x64\debug\elemento.obj
+c:\users\nayla\desktop\jogosfml-master\jogo tecnicas\teste jogo\x64\debug\colisor.obj
+c:\users\nayla\desktop\jogosfml-master\jogo tecnicas\teste jogo\x64\debug\animacao.obj
+c:\users\nayla\desktop\jogo\x64\debug\teste jogo.ilk
+c:\users\nayla\desktop\jogo\x64\debug\teste jogo.exe
+c:\users\nayla\desktop\jogo\x64\debug\teste jogo.pdb
+c:\users\nayla\desktop\jogo tecnicas\x64\debug\teste jogo.exe
+c:\users\nayla\desktop\jogo tecnicas\x64\debug\teste jogo.ilk
+c:\users\nayla\desktop\jogo tecnicas\x64\debug\teste jogo.pdb
+c:\users\nayla\desktop\jogosfml-master\jogo tecnicas\x64\debug\teste jogo.ilk
+c:\users\nayla\desktop\jogosfml-master\jogo tecnicas\x64\debug\teste jogo.exe
+c:\users\nayla\desktop\jogosfml-master\jogo tecnicas\x64\debug\teste jogo.pdb
+c:\users\nayla\desktop\jogosfml-master\jogo tecnicas\teste jogo\x64\debug\collider.obj
+c:\users\nayla\desktop\jogosfml-master\jogo tecnicas\teste jogo\x64\debug\no.obj
+c:\users\nayla\desktop\jogosfml-master\jogo tecnicas\teste jogo\x64\debug\platform.obj
+c:\users\nayla\desktop\jogosfml-master\jogo tecnicas\teste jogo\x64\debug\player.obj
+c:\users\nayla\desktop\jogosfml-master\jogo tecnicas\teste jogo\x64\debug\spikes.obj
+c:\users\nayla\desktop\jogosfml-master\jogo tecnicas\teste jogo\x64\debug\teste jogo.tlog\cl.command.1.tlog
+c:\users\nayla\desktop\jogosfml-master\jogo tecnicas\teste jogo\x64\debug\teste jogo.tlog\cl.read.1.tlog
+c:\users\nayla\desktop\jogosfml-master\jogo tecnicas\teste jogo\x64\debug\teste jogo.tlog\cl.write.1.tlog
+c:\users\nayla\desktop\jogosfml-master\jogo tecnicas\teste jogo\x64\debug\teste jogo.tlog\link.command.1.tlog
+c:\users\nayla\desktop\jogosfml-master\jogo tecnicas\teste jogo\x64\debug\teste jogo.tlog\link.read.1.tlog
+c:\users\nayla\desktop\jogosfml-master\jogo tecnicas\teste jogo\x64\debug\teste jogo.tlog\link.write.1.tlog
+c:\users\nayla\desktop\jogosfml-master\jogo tecnicas\teste jogo\x64\debug\teste jogo.tlog\rc.command.1.tlog
+c:\users\nayla\desktop\jogosfml-master\jogo tecnicas\teste jogo\x64\debug\teste jogo.tlog\rc.read.1.tlog
+c:\users\nayla\desktop\jogosfml-master\jogo tecnicas\teste jogo\x64\debug\teste jogo.tlog\rc.write.1.tlog

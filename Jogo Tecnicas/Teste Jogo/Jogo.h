@@ -1,17 +1,23 @@
 #include "SFML/Graphics.hpp"
 #include "Fase.h"
 #include "Jogador.h"
+#include "Chefao.h"
+#include "Inimigo.h"
+#include "Obstaculos.h"
+#include "Plataforma.h"
+#include "Menu.h"
+#include <vector>
 using namespace std;
 using namespace sf;
 #pragma once
 class Jogo
 {
 private:
-	Jogador * pjogadores;
+	vector <Jogador> lista_jogadores;
+	Fase fase;
 	bool pause;
 	bool coop;
-	Fase fase1;
-	Fase fase2;
+	Menu menu;
 
 public:
 	Jogo();

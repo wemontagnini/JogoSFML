@@ -33,19 +33,10 @@
     <ClCompile Include="Colisor.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
-    <ClCompile Include="Plataforma.cpp">
-      <Filter>Arquivos de Origem</Filter>
-    </ClCompile>
-    <ClCompile Include="Obstaculos.cpp">
-      <Filter>Arquivos de Origem</Filter>
-    </ClCompile>
     <ClCompile Include="Espinhos.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
     <ClCompile Include="Fogo.cpp">
-      <Filter>Arquivos de Origem</Filter>
-    </ClCompile>
-    <ClCompile Include="Pedra.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
     <ClCompile Include="Tronco.cpp">
@@ -57,16 +48,19 @@
     <ClCompile Include="Jogo.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
-    <ClCompile Include="Principal.cpp">
-      <Filter>Arquivos de Origem</Filter>
-    </ClCompile>
     <ClCompile Include="Menu.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
-    <ClCompile Include="Lista.cpp">
+    <ClCompile Include="Chefao.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
-    <ClCompile Include="Elemento.cpp">
+    <ClCompile Include="Cenario.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Obstaculos.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Plataforma.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
   </ItemGroup>
@@ -89,19 +83,10 @@
     <ClInclude Include="Colisor.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
-    <ClInclude Include="Plataforma.h">
-      <Filter>Arquivos de Cabeçalho</Filter>
-    </ClInclude>
-    <ClInclude Include="Obstaculos.h">
-      <Filter>Arquivos de Cabeçalho</Filter>
-    </ClInclude>
     <ClInclude Include="Espinhos.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
     <ClInclude Include="Fogo.h">
-      <Filter>Arquivos de Cabeçalho</Filter>
-    </ClInclude>
-    <ClInclude Include="Pedra.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
     <ClInclude Include="Tronco.h">
@@ -113,19 +98,19 @@
     <ClInclude Include="Jogo.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
-    <ClInclude Include="Principal.h">
-      <Filter>Arquivos de Cabeçalho</Filter>
-    </ClInclude>
     <ClInclude Include="Menu.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
-    <ClInclude Include="Lista2.h">
+    <ClInclude Include="Chefao.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
-    <ClInclude Include="Lista.h">
+    <ClInclude Include="Plataforma.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
-    <ClInclude Include="Elemento.h">
+    <ClInclude Include="Obstaculos.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Cenario.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
   </ItemGroup>
