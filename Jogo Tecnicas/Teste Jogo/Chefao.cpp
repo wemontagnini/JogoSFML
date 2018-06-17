@@ -12,18 +12,33 @@ Chefao::~Chefao()
 void Chefao::andar(const float deltaTime, const float posPlayer)
 {
 	vel.x = 0.0f;
-	float auxiliar = posPlayer - get_posicao().x;
-	if (auxiliar < 0)
+	float posicao = posPlayer - get_posicao().x;
+	float podeAndar = abs(posPlayer) - abs(get_posicao().x);
+	bool lado;
+	if (posicao < 0)
+		lado = false;
+	else
+		lado = true;
+	if (abs(podeAndar) > 0.1f)
 	{
-		corpo.move(-velocidade*deltaTime, 0.0f);
-		corpo.setTextureRect(animacao.uvRect);
-		animacao.Update(0, deltaTime, false, 3);
+		if (posicao < 0)
+		{
+			corpo.move(-velocidade * deltaTime, 0.0f);
+			corpo.setTextureRect(animacao.uvRect);
+			animacao.Update(0, deltaTime, false, 1);
+			
+		}
+		else if (posicao > 0)
+		{
+			corpo.move(velocidade * deltaTime, 0.0f);
+			corpo.setTextureRect(animacao.uvRect);
+			animacao.Update(0, deltaTime, true, 1);
+		}
 	}
-	else if (auxiliar > 0)
+	else
 	{
-		corpo.move(velocidade * deltaTime, 0.0f);
 		corpo.setTextureRect(animacao.uvRect);
-		animacao.Update(0, deltaTime, true, 3);
+		animacao.Update(0, deltaTime, lado, 1);
+	}
 
-	}
 }

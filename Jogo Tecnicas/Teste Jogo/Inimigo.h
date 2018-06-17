@@ -13,6 +13,7 @@ public:
 	virtual ~Inimigo();
 	bool mover(float deltaTime, bool andaEsquerda); // anda esquerda nao pode ser const, é alterado o valor
 	float get_posMax() { return posMax; }
+	virtual void mover(Vector2f auxiliar) { corpo.move(auxiliar); }
 
 
 };

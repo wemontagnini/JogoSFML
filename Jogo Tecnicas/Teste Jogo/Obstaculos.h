@@ -7,16 +7,20 @@ protected:
 	RectangleShape corpo;
 	bool dano;
 	bool visivel;
+	int tomandoDanoObstaculo;
+
 public:
 	Obstaculos();
 	Obstaculos(Texture * textura, Vector2f tamanho, Vector2f posicao, const bool visivel_aux, const bool dano_aux);
 	virtual ~Obstaculos();
 
-	void desenhar(RenderWindow &window) { if (visivel) { window.draw(corpo); } }
+	void desenhar(RenderWindow &window) { if (visivel) window.draw(corpo); }
 	Colisor get_colisor() { return Colisor(corpo); }
 	Vector2f get_posicao() { return corpo.getPosition(); }
 	bool get_dano() { return dano; }
+	int get_tomandoDanoObstaculo() { return tomandoDanoObstaculo; }
 
+	void set_tomandoDanoObstaculo(const int dano_aux) { tomandoDanoObstaculo = dano_aux; }
 	void set_posicao(const Vector2f pos_aux) { corpo.setPosition(pos_aux); }
 	void set_textura(Texture * tex_aux) { corpo.setTexture(tex_aux); }
 	void set_tamanho(const Vector2f tam_aux) { corpo.setSize(tam_aux); corpo.setOrigin(tam_aux / 2.0f); }
@@ -24,5 +28,7 @@ public:
 	void set_texturaRect(const IntRect aux) { corpo.setTextureRect(aux); }
 	void set_dano(const bool dano_aux) { dano = dano_aux; }
 	virtual void Update(const float deltaTime) = 0;
+	void operator++(int) { tomandoDanoObstaculo++; }
+	void operator--(int) { tomandoDanoObstaculo = 0; }
 };
 

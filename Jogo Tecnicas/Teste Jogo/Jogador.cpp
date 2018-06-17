@@ -10,26 +10,7 @@ Jogador::Jogador(Texture * textura, Vector2u qtdImagem, float troca, float vel_a
 {
 	coop = coop_aux;
 	vida = vida_aux;
-	if (coop)
-	{
-		Texture * tex = new Texture;
-		tex->loadFromFile("imagens\\coracao.png");
-		lista_coracoes.push_back(Cenario(tex, Vector2f(30.0f, 30.0f), Vector2f(-1300.0f, 300.0f), true));
-		lista_coracoes.push_back(Cenario(tex, Vector2f(30.0f, 30.0f), Vector2f(-1300.0f, 200.0f), true));
-		lista_coracoes.push_back(Cenario(tex, Vector2f(30.0f, 30.0f), Vector2f(0.0f, 0.0f), true));
-		lista_coracoes.push_back(Cenario(tex, Vector2f(30.0f, 30.0f), Vector2f(0.0f, 0.0f), true));
-		lista_coracoes.push_back(Cenario(tex, Vector2f(30.0f, 30.0f), Vector2f(0.0f, 0.0f), true));
-	}
-	else
-	{
-		Texture * tex = new Texture;
-		tex->loadFromFile("imagens\\coracao.png");
-		lista_coracoes.push_back(Cenario(tex, Vector2f(30.0f, 30.0f), Vector2f(0.0f, 0.0f), true));
-		lista_coracoes.push_back(Cenario(tex, Vector2f(30.0f, 30.0f), Vector2f(0.0f, 0.0f), true));
-		lista_coracoes.push_back(Cenario(tex, Vector2f(30.0f, 30.0f), Vector2f(0.0f, 0.0f), true));
-		lista_coracoes.push_back(Cenario(tex, Vector2f(30.0f, 30.0f), Vector2f(0.0f, 0.0f), true));
-		lista_coracoes.push_back(Cenario(tex, Vector2f(30.0f, 30.0f), Vector2f(0.0f, 0.0f), true));
-	}
+	preencheCoracoes(coop, vida_aux/2);
 
 }
 
@@ -67,4 +48,15 @@ void Jogador::pular(float deltaTime, bool& aux)
 	animacao.Update(linha, deltaTime, viradoDireita, colunas);
 	corpo.setTextureRect(animacao.uvRect);
 	mover(vel*deltaTime);
+}
+
+void Jogador::preencheCoracoes(const bool coop, const int quantidade)
+{
+	Texture * text = new Texture;
+	if (coop)
+		text->loadFromFile("imagens\\coracao_player1.png");
+	else
+		text->loadFromFile("imagens\\coracao_player2.png");
+	for (int i = 0; i < quantidade; i++)
+		lista_coracoes.push_back(new Cenario(text, Vector2f(30.0f, 30.0f), Vector2f(0.0f, 0.0f), true));
 }

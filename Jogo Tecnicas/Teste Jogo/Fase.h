@@ -6,6 +6,7 @@
 #include "Tronco.h"
 #include "Jogador.h"
 #include "Inimigo.h"
+#include "Obstaculos.h"
 #include "Chefao.h"
 #include "Cenario.h"
 #include <vector>
@@ -14,21 +15,20 @@ using namespace sf;
 #pragma once
 class Fase
 {
-private:
-	vector <Fogo> lista_fogo;
-	vector <Inimigo> lista_inimigos;
-	vector <Obstaculos> lista_obstaculos;
-	vector <Plataforma> lista_plataformas;
-	vector <Cenario> lista_cenario;
+protected:
+	vector <Inimigo*> lista_inimigos;
+	vector <Obstaculos*> lista_obstaculos;
+	vector <Plataforma*> lista_plataformas;
+	vector <Cenario*> lista_cenario;
 
 public:
 	Fase();
 	virtual ~Fase();
-	bool ExecutarFase1(vector<Jogador> lista_players, View & view, RenderWindow & window);
-	bool ExecutarFase2(vector<Jogador> lista_players, View & view, RenderWindow & window);
 	void setVectors(const bool fase1);
+	void arrumaCamera(vector<Jogador*> lista_players, View & view, vector<Plataforma*> lista_view);
 	void esvaziaVectors();
-	
-	
+
+
+
 };
 

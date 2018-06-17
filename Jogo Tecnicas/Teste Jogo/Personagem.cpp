@@ -4,7 +4,8 @@ Personagem::Personagem() :animacao()
 	altPulo = 0.0f;
 	velocidade = 0.0f;
 	linha = 0;
-	viradoDireita = true;
+	tomandoDanoInimigo = 0;
+	tomandoDanoObstaculo = 0;
 }
 
 Personagem::Personagem(Texture * textura, Vector2u qtdImagem, float troca, float velocidade_aux, float altPulo_aux, Vector2f tamPersonagem, Vector2f posicao)
@@ -19,6 +20,8 @@ Personagem::Personagem(Texture * textura, Vector2u qtdImagem, float troca, float
 	corpo.setPosition(posicao);
     corpo.setTexture(textura);
 	corpo.setOrigin(corpo.getSize() / 2.0f);
+	tomandoDanoInimigo = 0;
+	tomandoDanoObstaculo = 0;
 }
 
 Personagem::~Personagem()
@@ -26,41 +29,29 @@ Personagem::~Personagem()
 }
 
 
-void Personagem::Update(float deltaTime, int i, float posMax, const float posMin)
+void Personagem::Update(float deltaTime, const bool coop)
 {
 	int colunas = 0;
 	vel.x = 0.0f;
-	if (i == 1)
+	if (coop)
 	{
-		if (get_posicao().x - vel.x * deltaTime > posMin)
-		{
-			if (Keyboard::isKeyPressed(Keyboard::A))
-				vel.x -= velocidade;
-		}
-		if (get_posicao().x + vel.x * deltaTime < posMax)
-		{
-			if (Keyboard::isKeyPressed(Keyboard::D))
-				vel.x += velocidade;
-		}
+		if (Keyboard::isKeyPressed(Keyboard::A))
+			vel.x -= velocidade;
+
+		if (Keyboard::isKeyPressed(Keyboard::D))
+			vel.x += velocidade;
 		if (Keyboard::isKeyPressed(Keyboard::W) && noChao)
 		{
 			noChao = false;
 			vel.y = -sqrtf(2.0f * 981.0f * altPulo);
 		}
 	}
-	else if (i == 2)
+	else
 	{
-		if (get_posicao().x - vel.x * deltaTime > posMin)
-		{
-			if (Keyboard::isKeyPressed(Keyboard::Left))
-				vel.x -= velocidade;
-		}
-		if (get_posicao().x + vel.x * deltaTime < posMax)
-		{
-			if (Keyboard::isKeyPressed(Keyboard::Right))
-				vel.x += velocidade;
-		}
-
+		if (Keyboard::isKeyPressed(Keyboard::Left))
+			vel.x -= velocidade;
+		if (Keyboard::isKeyPressed(Keyboard::Right))
+			vel.x += velocidade;
 		if (Keyboard::isKeyPressed(Keyboard::Up) && noChao)
 		{
 			noChao = false;
@@ -104,3 +95,63 @@ void Personagem::emColisao(Vector2f direcao)
 	if (direcao.y > 0.0f)
 		vel.y = 0.0f; // Colisao no topo
 }
+
+
+void Personagem::emDano(Personagem *player, Personagem* inimigo, const float deltaTime)
+{
+	player->set_vel(Vector2f(0.0f, (player->get_vel().y + deltaTime * 981.0f)));
+	if (player->get_tomandoDanoInimigo() == 1)
+	{
+		player->set_vel(Vector2f(0.0f, -sqrtf(2.0f * 981.0f * (player->get_altPulo() / 2))));
+		player->set_noChao(false);
+	}
+
+	if (player->get_tomandoDanoInimigo() < 350)
+	{
+		if (player->get_viradoDireita())
+		{
+			player->mover(Vector2f(-player->get_velocidade()*deltaTime, player->get_vel().y*deltaTime));
+			player->set_tomandoDanoInimigo(player->get_tomandoDanoInimigo() + 1);
+		}
+		else
+		{
+			player->mover(Vector2f(player->get_velocidade()*deltaTime, player->get_vel().y*deltaTime));
+			player->set_tomandoDanoInimigo(player->get_tomandoDanoInimigo() + 1);
+		}
+	}
+	else
+	{
+		player->set_tomandoDanoInimigo(0);
+		inimigo->set_tomandoDanoInimigo(0);
+	}
+}
+
+void Personagem::emDano(Personagem * player, const float deltaTime)
+{
+
+	player->set_vel(Vector2f(0.0f, (player->get_vel().y + deltaTime * 981.0f)));
+	if (player->get_tomandoDanoObstaculo() == 1)
+	{
+     	player->set_vel(Vector2f(0.0f, -sqrtf(2.0f * 981.0f * (player->get_altPulo() / 2))));
+		player->set_noChao(false);
+	}
+
+	if (player->get_tomandoDanoObstaculo() < 350)
+	{
+		if (player->get_viradoDireita())
+		{
+			player->mover(Vector2f(-player->get_velocidade()*deltaTime, player->get_vel().y*deltaTime));
+			player->set_tomandoDanoObstaculo(player->get_tomandoDanoObstaculo() + 1);
+		}
+		else
+		{
+			player->mover(Vector2f(player->get_velocidade()*deltaTime, player->get_vel().y*deltaTime));
+			player->set_tomandoDanoObstaculo(player->get_tomandoDanoObstaculo() + 1);
+		}
+	}
+	else
+	{
+		player->set_tomandoDanoObstaculo(0);
+	}
+}
+
