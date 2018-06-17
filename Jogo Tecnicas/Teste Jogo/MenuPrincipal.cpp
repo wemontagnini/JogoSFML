@@ -23,17 +23,17 @@ void MenuPrincipal::executarMenu(RenderWindow & window, View & view, int & escol
 
 	while (!escolha)
 	{
-		if (mouse.getPosition().x >= 564 && mouse.getPosition().x <= 775)
+		if (mouse.getPosition(window).x >= 128 && mouse.getPosition(window).x <= 360)
 		{
-			if (mouse.getPosition().y >= 317 && mouse.getPosition().y <= 380 && Mouse::isButtonPressed(Mouse::Left))
+			if (mouse.getPosition(window).y >= 166 && mouse.getPosition(window).y <= 223 && Mouse::isButtonPressed(Mouse::Left))
 				escolha = 1;
-			if (mouse.getPosition().y >= 392 && mouse.getPosition().y <= 443 && Mouse::isButtonPressed(Mouse::Left))
+			if (mouse.getPosition(window).y >= 235 && mouse.getPosition(window).y <= 291 && Mouse::isButtonPressed(Mouse::Left))
 				escolha = 2;
-			if (mouse.getPosition().y >= 474 && mouse.getPosition().y <= 518 && Mouse::isButtonPressed(Mouse::Left))
+			if (mouse.getPosition(window).y >= 302 && mouse.getPosition(window).y <= 360 && Mouse::isButtonPressed(Mouse::Left))
 				escolha = 3;
-			if (mouse.getPosition().y >= 522 && mouse.getPosition().y <= 585 && Mouse::isButtonPressed(Mouse::Left))
+			if (mouse.getPosition(window).y >= 370 && mouse.getPosition(window).y <= 428 && Mouse::isButtonPressed(Mouse::Left))
 				escolha = 4;
-			if (mouse.getPosition().y >= 598 && mouse.getPosition().y <= 655 && Mouse::isButtonPressed(Mouse::Left))
+			if (mouse.getPosition(window).y >= 440 && mouse.getPosition(window).y <= 497 && Mouse::isButtonPressed(Mouse::Left))
 				escolha = 5;
 		}
 		desenhar(window);

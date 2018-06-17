@@ -15,11 +15,11 @@ void Jogo::Executar()
 	View view(Vector2f(0.0f, 0.0f), Vector2f(512, 408.0f));
 	Texture* player1 = new Texture;
 	Texture* player2 = new Texture;
-	player1->loadFromFile("imagens\\player1.png");
+	player1->loadFromFile("imagens\\chefao.png");
 	player2->loadFromFile("imagens\\player2.png");
 	int escolha;
 	menu_principal.executarMenu(window, view, escolha);
-	lista_jogadores.push_back(new Jogador(player1, Vector2u(3, 1), 0.25f, 150.0f, 100.0f, Vector2f(40.0f, 50.0f), Vector2f(-1250.0f, 341.0f), 50, true));
+	lista_jogadores.push_back(new Jogador(player1, Vector2u(4, 1), 0.25f, 150.0f, 100.0f, Vector2f(60.0f, 70.0f), Vector2f(-1250.0f, 341.0f), 50, true));
 	if (escolha == 2)
 		lista_jogadores.push_back(new Jogador(player2, Vector2u(3, 1), 0.3f, 150.0f, 100.0f, Vector2f(40.0f, 50.0f), Vector2f(-1300.0f, 341.0f), 10, false));
 

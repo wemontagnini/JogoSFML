@@ -1,5 +1,5 @@
-﻿  Floresta_Dia.cpp
+﻿  Inimigo.cpp
 c:\users\nayla\desktop\nova pasta (2)\teste jogo\animacao.h(22): warning C4244: '=': conversão de 'float' para 'int', possível perda de dados
 c:\users\nayla\desktop\nova pasta (2)\teste jogo\animacao.h(23): warning C4244: '=': conversão de 'float' para 'int', possível perda de dados
-c:\users\nayla\desktop\nova pasta (2)\teste jogo\floresta_dia.cpp(246): warning C4715: 'Floresta_Dia::executar': nem todos os caminhos de controle retornam um valor
+c:\users\nayla\desktop\nova pasta (2)\teste jogo\inimigo.cpp(48): warning C4715: 'Inimigo::mover': nem todos os caminhos de controle retornam um valor
   Teste Jogo.vcxproj -> C:\Users\Nayla\Desktop\Nova pasta (2)\x64\Debug\Teste Jogo.exe

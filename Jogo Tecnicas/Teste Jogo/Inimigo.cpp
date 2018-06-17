@@ -19,12 +19,13 @@ Inimigo::~Inimigo()
 
 bool Inimigo::mover(float deltaTime, bool andaEsquerda)
 {
+	//vel.y += 981.0f*deltaTime;
 	vel.x = 0.0f;
 	if (!andaEsquerda)
 	{
 		if (corpo.getPosition().x < posMax)
 		{
-			corpo.move(velocidade*deltaTime, 0.0f);
+			corpo.move(velocidade*deltaTime, vel.y);
 			corpo.setTextureRect(animacao.uvRect);
 			animacao.Update(0, deltaTime, true, 3);
 			return false;
@@ -36,7 +37,7 @@ bool Inimigo::mover(float deltaTime, bool andaEsquerda)
 	{
 		if (corpo.getPosition().x >= posMin)
 		{
-			corpo.move(-velocidade * deltaTime, 0.0f);
+			corpo.move(-velocidade * deltaTime, vel.y);
 			corpo.setTextureRect(animacao.uvRect);
 			animacao.Update(0, deltaTime, false, 3);
 			return true;

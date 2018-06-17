@@ -11,7 +11,7 @@ Fase::~Fase()
 
 void Fase::setVectors(const bool fase1)
 {
-	
+
 }
 
 void Fase::arrumaCamera(vector<Jogador*> lista_players, View & view, vector<Plataforma*> lista_view)
@@ -62,6 +62,12 @@ void Fase::arrumaCamera(vector<Jogador*> lista_players, View & view, vector<Plat
 				lista_players[0]->get_lista_coracoes()[j]->set_posicao(Vector2f(-1280.0f + k, 100.0f));
 				k += 22;
 			}
+			k = 0;
+			for (int j = 0; j < lista_players[1]->get_lista_coracoes().size(); j++)
+			{
+				lista_players[1]->get_lista_coracoes()[j]->set_posicao(Vector2f(-1280.0f + k, 130.0f));
+				k += 22;
+			}
 		}
 		else if (posicao > 1460.0f)
 		{
@@ -71,6 +77,12 @@ void Fase::arrumaCamera(vector<Jogador*> lista_players, View & view, vector<Plat
 			for (int j = 0; j < lista_players[0]->get_lista_coracoes().size(); j++)
 			{
 				lista_players[0]->get_lista_coracoes()[j]->set_posicao(Vector2f(1252.0f + k, 100.0f));
+				k += 22;
+			}
+			k = 0;
+			for (int j = 0; j < lista_players[1]->get_lista_coracoes().size(); j++)
+			{
+				lista_players[1]->get_lista_coracoes()[j]->set_posicao(Vector2f(1252.0f + k, 130.0f));
 				k += 22;
 			}
 
@@ -85,20 +97,26 @@ void Fase::arrumaCamera(vector<Jogador*> lista_players, View & view, vector<Plat
 				lista_players[0]->get_lista_coracoes()[j]->set_posicao(Vector2f(lista_players[0]->get_posicao().x - 208.7f + k, 100.0f));
 				k += 22;
 			}
+			k = 0;
+			for (int j = 0; j < lista_players[1]->get_lista_coracoes().size(); j++)
+			{
+				lista_players[0]->get_lista_coracoes()[j]->set_posicao(Vector2f(lista_players[0]->get_posicao().x - 208.7f + k, 100.0f));
+				k += 22;
+
+			}
+
 		}
 	}
-	
 }
-
 void Fase::esvaziaVectors()
 {
-	while(!lista_cenario.empty())
+	while (!lista_cenario.empty())
 		lista_cenario.pop_back();
-	while(!lista_inimigos.empty())
+	while (!lista_inimigos.empty())
 		lista_inimigos.pop_back();
-	while(!lista_plataformas.empty())
+	while (!lista_plataformas.empty())
 		lista_plataformas.pop_back();
-	while(!lista_obstaculos.empty())
+	while (!lista_obstaculos.empty())
 		lista_obstaculos.pop_back();
 
 }

@@ -23,12 +23,12 @@ void MenuPausa::executarMenu(RenderWindow & window, int & escolha, vector<Jogado
 	Mouse mouse;
 	while (!escolha)
 	{
-		if (mouse.getPosition().y >= 177 && mouse.getPosition().y <= 250)
+		if (mouse.getPosition(window).y >= 36 && mouse.getPosition(window).y <= 96)
 		{
-			cout << "entra aqui" << endl;
-			if (mouse.getPosition().x >= 442 && mouse.getPosition().x <= 503 && Mouse::isButtonPressed(Mouse::Left))
+	
+			if (mouse.getPosition(window).x >= 8 && mouse.getPosition(window).x <= 67 && Mouse::isButtonPressed(Mouse::Left))
 				escolha = 1;
-			if (mouse.getPosition().x >= 511 && mouse.getPosition().x <= 695 && Mouse::isButtonPressed(Mouse::Left))
+			if (mouse.getPosition(window).x >= 78 && mouse.getPosition(window).x <= 260 && Mouse::isButtonPressed(Mouse::Left))
 			{
 				salvarJogo(lista_players);
 				escolha = 1;

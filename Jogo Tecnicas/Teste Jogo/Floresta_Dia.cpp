@@ -25,10 +25,9 @@ void Floresta_Dia::carrega_florestaDia()
 	lobo->loadFromFile("imagens\\lobo.png");
 	macaco->loadFromFile("imagens\\macaco.png");
 	chefao->loadFromFile("imagens\\fogo.png");
-	ground->loadFromFile("imagens\\ground_noite.png");
-	plataforma->loadFromFile("imagens\\plataforma_noite.png");
-	background->loadFromFile("imagens\\fundo_noite.png");
-	//canoa->loadFromFile("imagens\\canoa.png");
+	ground->loadFromFile("imagens\\ground_dia.png");
+	plataforma->loadFromFile("imagens\\plataforma_dia.png");
+	background->loadFromFile("imagens\\fundo_dia.png");
 	oca->loadFromFile("imagens\\oca_dia.png");
 
 	//Carrega a lista de inimigos
@@ -42,7 +41,7 @@ void Floresta_Dia::carrega_florestaDia()
 	lista_inimigos.push_back(new Inimigo(macaco, Vector2u(3, 1), 0.3f, 150.0f, 100.0f, Vector2f(40.0f, 50.0f), Vector2f(-512.0f, 230.f), 100.0f));
 
 	//Carrega lista de plataformas
-	lista_plataformas.push_back(new Plataforma(ground, Vector2f(3064.0f, 88.0f), Vector2f(200.0f, 378.5f), false));
+	lista_plataformas.push_back(new Plataforma(nullptr, Vector2f(3064.0f, 88.0f), Vector2f(200.0f, 378.5f), false));
 	lista_plataformas.push_back(new Plataforma(plataforma, Vector2f(300.0f, 35.0f), Vector2f(-550.0f, 270.0f), true));
 	lista_plataformas.push_back(new Plataforma(plataforma, Vector2f(300.0f, 35.0f), Vector2f(200.0f, 270.0f), true));
 	lista_plataformas.push_back(new Plataforma(plataforma, Vector2f(300.0f, 35.0f), Vector2f(950.0f, 270.0f), true));
@@ -50,9 +49,9 @@ void Floresta_Dia::carrega_florestaDia()
 	lista_plataformas.push_back(new Plataforma(nullptr, Vector2f(3.0f, 1000.0f), Vector2f(1723.0f, 500.0f), false));
 
 	//Carrega lista de obstaculos
-	lista_obstaculos.push_back((Obstaculos*) new Espinhos(Vector2f(-550.0f, 342.0f)));
-	lista_obstaculos.push_back((Obstaculos*) new Espinhos(Vector2f(200.0f, 342.0f)));
-	lista_obstaculos.push_back((Obstaculos*) new Espinhos(Vector2f(950.0f, 342.0f)));
+	lista_obstaculos.push_back((Obstaculos*) new Espinhos(Vector2f(-550.0f, 312.0f)));
+	lista_obstaculos.push_back((Obstaculos*) new Espinhos(Vector2f(200.0f, 312.0f)));
+	lista_obstaculos.push_back((Obstaculos*) new Espinhos(Vector2f(950.0f, 312.0f)));
 	lista_obstaculos.push_back((Obstaculos*) new Tronco(Vector2f(-960.0f, 325.0f)));
 	lista_obstaculos.push_back((Obstaculos*) new Tronco(Vector2f(-225.0f, 325.0f)));
 	lista_obstaculos.push_back((Obstaculos*) new Tronco(Vector2f(87, 245.0f)));
@@ -71,8 +70,8 @@ bool Floresta_Dia::executar(vector<Jogador*> lista_players, View & view, RenderW
 	Texture * textura = new Texture;
 	textura->loadFromFile("imagens\\passaro.png");
 	vector<Plataforma*> plataformas_view;
-	plataformas_view.push_back(new Plataforma(nullptr, Vector2f(3.0f, 1000.0f), Vector2f(0.0f, 0.0f), false));
-	plataformas_view.push_back(new Plataforma(nullptr, Vector2f(3.0f, 1000.0f), Vector2f(0.0f, 0.0f), false));
+	plataformas_view.push_back(new Plataforma(nullptr, Vector2f(3.0f, 1000.0f), Vector2f(-10000.0f, -10000.0f), false));
+	plataformas_view.push_back(new Plataforma(nullptr, Vector2f(3.0f, 1000.0f), Vector2f(-10000.0f, -10000.0f), false));
 	Chefao chefe(textura, Vector2u(4, 1), 0.3f, 100.0f, 0, Vector2f(40.0f, 50.0f), Vector2f(-1300.0f, 250.0f), 0);
 	Plataforma fimDeFase(nullptr, Vector2f(34.0f, 38.0f), Vector2f(1528, 346), false);
 	float posMax = 0, posMin = 0;
@@ -201,7 +200,6 @@ bool Floresta_Dia::executar(vector<Jogador*> lista_players, View & view, RenderW
 			{
 				if (plataformas_view[i]->get_colisor().checaColisao(lista_players[k]->get_colisor(), direction, 1.0f))
 					lista_players[k]->emColisao(direction);
-
 			}
 
 			if (lista_players[k]->get_vida() == 0)
@@ -214,10 +212,6 @@ bool Floresta_Dia::executar(vector<Jogador*> lista_players, View & view, RenderW
 		}
 		window.clear(Color(150, 150, 150));
 		window.setView(view);
-
-
-
-
 		for (int j = 0; j < lista_cenario.size(); j++)
 			lista_cenario[j]->desenhar(window);
 
